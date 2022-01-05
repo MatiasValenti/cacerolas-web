@@ -1,0 +1,349 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #645e5e;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius : 5px;
+}
+
+header h1 {
+    font-size: 1.7em;
+    margin-left: -20px;
+    color: #e2dbdb;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: .1em;
+}
+
+
+.leftBar {
+    display: flex;
+    align-items: center;
+}
+
+.rightBar {
+    display: flex;
+    align-items: center;
+}
+
+.navImg {
+    padding: 5px;
+    width: 50px;
+    border-radius: 50%;
+}
+.spotifyImg {
+    padding: 5px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    padding: .7em;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.2em;
+    border-radius: 50%;
+}
+
+header nav a:hover {
+    color: black;
+background-color:#e2dbdb;
+transition-duration: 1s;
+}
+
+
+header nav a:link {
+    color: #e2dbdb;
+}
+header nav a:link:hover {
+    color: black;
+}
+
+header nav a:visited {
+    color: #e2dbdb;
+}
+header nav a:visited:hover {
+    color: black;
+}
+.spotifyIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+}
+
+header p {
+    font-size: .5em;
+    margin-left: 1.5px;
+}
+.spotifyIcon p {
+    color: #e2dbdb;
+}
+.spotifyIcon:hover {
+    color: black;
+    background-color: #e2dbdb;
+    transition-duration: 1s;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.playerSection {
+    background-image: url(./images/Cacerolas\ escenario\ verde.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blackLayout {
+    width: 90%;
+    height: 80%;
+    background-color: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition-duration: 2s;
+}
+
+.player{
+    display: flex;  
+    width: 90%;
+}
+
+.albumInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e2dbdb;
+    margin-left: 20px;
+    margin-top: -100px;
+}
+.albumInfo h3 {
+    font-size: 2em;
+}
+.albumInfo p {
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #645e5e;
+    margin-top: -20px;
+    width: 100%;
+}
+
+.youtubeSection {
+background-image: url(./images/Cacerolas\ escenario\ azul.jpg);
+margin-top: -10px;
+height: 800px;
+width: 100%;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.youtubePlayer {
+    width: 80%;
+    height: 70%;
+}
+
+.whiteLayout {
+    background-color: rgba(255,255,255,.2);
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galerySection {
+    background-image: url(./images/Cacerolas\ escenario\ marron.jpg);
+    height: 800px;
+    width: 100%;
+    margin-top: -10px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeryBox {
+display: flex;
+flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.galeryCard {
+    width: 25%;
+    height: 25%;
+    background-color: rgba(255,255,255,.05);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition-duration: 1s;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: .1em;
+    font-size: 1.5em;
+}
+
+.galeryCard figure img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+.galeryCard:hover {
+    width: 27%;
+    height: 27%;
+    transition-duration: 1s;
+}
+
+.galeryCard a {
+    text-decoration: none;
+}
+
+.galeryCard a:visited {
+    color: #645e5e;
+}
+
+.galeryCard a:link {
+    color: #645e5e;
+}
+
+.eventSection {
+    width: 100%;
+    background-image: url(./images/publico.jpg);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+footer {
+    height: 200px;
+    background-color: #645e5e;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+}
+footer p {
+    font-size: .7em;
+}
+.socialConteiner {
+    width: 100%;
+    display: inline-flex;
+    column-gap: 5em;
+    padding: 1em;
+}
+
+.socialIcon {
+    width: 8em;
+    height: 8em;
+
+}
+.socialConteiner a {
+    width: 25%;
+    text-align: center;
+    border-radius: 50%;
+}
+.socialConteiner a:hover {
+    background-color: rgba(255,255,255,.2);
+    transition-duration: 1.5s;
+}
+
+table {
+    color:white;
+    font: 1.5em bold;
+}
+table th {
+    color: yellow;
+}
+table a {
+    text-decoration: none;
+    color: blue;
+}
+
+table td {
+    padding: 40px;
+}
+
+@media (max-width: 1050px) {
+ 
+
+    footer {
+        height: 100%;
+        width: 100%;
+    }
+    .rightBar {
+        display: none;
+    }
+    .galeryCard {
+        width: 40%;
+        height: 190px;
+    }
+    .socialConteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .player {
+        flex-direction: column;
+        align-items: center;
+    }
+    .spotifyImg {
+        display:none;
+    }
+    header p {
+        display:none;
+    }
+}
